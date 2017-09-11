@@ -160,7 +160,7 @@ test:
 
 
 production:
-  clients:
+  sessions:
     default:
       database: <%= ENV['MONGOID_DATABASE'] %>
       hosts:
