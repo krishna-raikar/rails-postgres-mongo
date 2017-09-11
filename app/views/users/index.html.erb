@@ -1,0 +1,19 @@
+<h1>Users</h1>
+<ul>
+  <% @users.all.each do | user | %>
+    <li>user: <%=user.name%> - status: <%=user.status%></li>
+  <% end %>
+</ul>
+
+
+
+User Status:
+<%= form_for User.new do |f| %>
+  <div class="form-input">
+    <input type="text" name="user[name]" placeholder="Name here">
+  </div>
+  <div class="form-input">
+    <input type="text" name="user[status]" placeholder="Status here">
+  </div>
+  <input type=submit value="submit">
+<%- end %>

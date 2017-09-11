@@ -1,2 +1,2 @@
 # rails-postgres-mongo
-an example which uses both posgres and mongodb 
+an example which uses both posgres and mongodb
