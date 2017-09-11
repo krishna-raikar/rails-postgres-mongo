@@ -155,3 +155,15 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+
+
+
+
+production:
+  clients:
+    default:
+      database: <%= ENV['MONGOID_DATABASE'] %>
+      hosts:
+        - <%= ENV['MONGOID_HOST'] %>
+      username: <%= ENV['MONGOID_USERNAME'] %>
+      password: <%= ENV['MONGOID_PASSWORD'] %>
